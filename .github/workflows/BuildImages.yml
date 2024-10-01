@@ -28,7 +28,7 @@ concurrency:
 jobs:
   setup:
     name: Create Matrix
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     outputs:
       configfiles: ${{ steps.set-matrix.outputs.configfiles }}
       time: ${{ steps.time.outputs.time }}
