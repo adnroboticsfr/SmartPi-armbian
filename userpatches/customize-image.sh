@@ -37,8 +37,8 @@ sudo apt install python3-wstool
 sudo rosdep init
 sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-dev
 sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
-sudo pip3 install face_recognition numpy
-sudo 
+sudo pip3 install numpy
+sudo pip3 install --upgrade opencv-python opencv-contrib-python
 
 Main() {
     case "${BOARD}" in
