@@ -15,11 +15,6 @@
 # shellcheck enable=requires-variable-braces
 # shellcheck disable=SC2034
 
-RELEASE=$1
-LINUXFAMILY=$2
-BOARD=$3
-BUILD_DESKTOP=$4
-
 sudo apt update 
 sudo apt upgrade
 git clone https://github.com/ADNroboticsfr/smartpi-gpio.git
@@ -39,5 +34,3 @@ sudo apt-get install -y python3-dev python3-pip libjpeg-dev zlib1g-dev libtiff-d
 sudo mv /usr/lib/python3.11/EXTERNALLY-MANAGED /usr/lib/python3.11/EXTERNALLY-MANAGED.old
 sudo pip3 install face_recognition numpy
 sudo pip3 install --upgrade opencv-python opencv-contrib-python
-
-
